@@ -1,0 +1,143 @@
+/* NORMAL */
+
+body {
+  background-color: #FFFFFF;
+  font-family: 'Baskerville', serif;
+  line-height: initial;
+  letter-spacing: 0.5px;
+  font-size: 0.95em;
+}
+
+nav {
+  padding-bottom: 10px;
+}
+
+nav li{
+  display:inline;
+  margin-right: 10px;
+}
+
+nav ul{
+  padding-left: 0px;
+}
+
+h1 {
+  font-family: 'Yatra One', cursive;
+  font-size: 30px;
+}
+
+nav a {
+  text-decoration: underline;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+nav a:hover, a:focus{
+  background-color: #0D1A80;
+  color:#FFFFFF;
+  top: -20px;
+}
+
+a.skiplink{
+  position: relative;
+    top: -80px;
+    transition: top ease-in 0.3s;
+}
+
+a.skiplink:focus, a.skiplink:active{
+  display: inline;
+  top: -20px;
+}
+
+.credit-text
+{
+  font-size: 11px;
+  font-style: italic;
+}
+
+.current{
+  background-color: #0D1A80;
+  text-transform: uppercase;
+  color:#FFFFFF;
+}
+
+.post-title{
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom:20px;
+}
+
+.poem-body{
+  width: 300px;
+}
+
+
+#container{
+  width: 600px;
+  margin: 20px 0px 0px 100px;
+  position: relative;
+  background-color: white;
+}
+
+#main{
+
+}
+
+.gallery{
+  display: grid;
+  grid-template: 300px 300px 300px / 300px 300px 300px;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.gallery>img {
+  max-width:100%;
+  max-height:100%;
+}
+
+
+.bg-image
+{
+  background-image: url("../images/oppbg.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* MOBILE QUERY  */
+
+@media (max-width: 780px){
+
+  body {
+    background-color: #c5b7b7;
+  }
+
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery > img {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  nav {
+    color: white;
+    background-color: black;
+    padding: 0px;
+  }
+
+  nav a {
+    color: white;
+  }
+
+  #container{
+    width: 100%;
+    margin: 0;
+    background-color: inherit;
+  }
+
+
+}
