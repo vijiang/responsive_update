@@ -99,6 +99,7 @@ a.skiplink:focus, a.skiplink:active{
 @media (max-width: 768px)
   /* iPad Mini */
   /* 768 x 1024 */
+  /* changes into a grid layout with the header/nav and content in separate columns */
 {
 
   body {
@@ -146,6 +147,7 @@ a.skiplink:focus, a.skiplink:active{
 
 @media (max-width: 750px)
   /* iPhone 8 */
+  /* Changes the background colour and navigation layout, current nav indicator colour */
 {
   body {
     background-color: #c5b7b7;
@@ -178,6 +180,12 @@ a.skiplink:focus, a.skiplink:active{
     width:100%;
     display:block;
     margin: 3px;
+  }
+
+  .current{
+    background-color: #b7c5c5;
+    text-transform: capitalize;
+    color:#FFFFFF;
   }
 
   #maincontent {
